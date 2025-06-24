@@ -6,15 +6,16 @@ body {
   font-family: 'Mali', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fdf6f0;
-  color: #333;
+  background: #fff2f8; /* เปลี่ยนสีพื้นหลังจาก #fdf6f0 เป็นชมพูอ่อนละมุน */
+  color: #4a2c2a; /* เปลี่ยนสีตัวหนังสือจาก #333 เป็นน้ำตาลเข้ม */
 }
 header {
   padding: 1.5rem;
   text-align: center;
-  background: #ffccde;
+  background: #ffc1d9; /* เปลี่ยนสีพื้นหลัง header จาก #ffccde เป็นชมพูอ่อนนุ่มตา */
   font-size: 1.4rem;
   font-weight: bold;
+  color: #7a2a4d; /* เพิ่มสีตัวหนังสือ header เป็นชมพูเข้มอ่านง่าย */
 }
 .grid {
   display: grid;
@@ -29,16 +30,17 @@ header {
 }
 .friend-btn {
   border: none;
-  background: #fff;
+  background: #fff0f6; /* เปลี่ยนสีพื้นหลังปุ่มเพื่อนจาก #fff เป็นชมพูอ่อนนวล */
   padding: 1.5rem;
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(255, 192, 203, 0.3); /* เปลี่ยนเงาเป็นชมพูพาสเทล */
   text-align: center;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 .friend-btn:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5); /* เปลี่ยนเงา hover เป็นชมพูเข้ม */
 }
 .friend-btn img {
   width: 90px;
@@ -51,7 +53,7 @@ header {
   display: block;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #ff69b4;
+  color: #d6336c; /* เปลี่ยนสีข้อความในปุ่มเป็นชมพูเข้ม */
 }
 .modal {
   display: none;
@@ -61,12 +63,12 @@ header {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(122, 42, 77, 0.6); /* เปลี่ยนพื้นหลัง modal จากดำโปร่งเป็นม่วงอมชมพูโปร่ง */
   justify-content: center;
   align-items: center;
 }
 .modal-content {
-  background: #fff;
+  background: #fff0f6; /* เปลี่ยนพื้นหลัง modal content เป็นชมพูอ่อน */
   padding: 2rem;
   border-radius: 25px;
   max-width: 90%;
@@ -74,6 +76,7 @@ header {
   overflow-y: auto;
   text-align: center;
   animation: pop 0.3s ease;
+  color: #6f2d4a; /* เปลี่ยนสีข้อความใน modal เป็นชมพูเข้ม */
 }
 @keyframes pop {
   from {
@@ -88,11 +91,11 @@ header {
 .modal-content h2 {
   font-family: "Mali", cursive;
   margin-top: 0;
-  color: #ff4081;
+  color: #d6336c; /* เปลี่ยนสีหัวข้อ modal เป็นชมพูเข้ม */
 }
 .modal-content p {
   font-size: 1rem;
-  color: #555;
+  color: #6f2d4a; /* เปลี่ยนสีข้อความ p ใน modal เป็นชมพูเข้ม */
   white-space: normal;
 }
 iframe {
@@ -105,50 +108,55 @@ iframe {
 .close-btn {
   margin-top: 1.5rem;
   padding: 0.6rem 1.2rem;
-  background: #ff69b4;
+  background: #d6336c; /* เปลี่ยนสีปุ่มปิด modal จาก #ff69b4 เป็นชมพูเข้ม */
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(214, 51, 108, 0.6); /* เพิ่มเงาปุ่มชมพูเข้ม */
+}
+.close-btn:hover {
+  background: #a72449; /* สีเข้มเวลาชี้ */
 }
 .latsmassage{
   padding: 1.5rem;
   text-align: center;
-  background: #ffccde;
+  background: #ffc1d9; /* เปลี่ยนสีพื้นหลังเหมือน header */
   font-size: 1.4rem;
   font-weight: bold;
+  color: #7a2a4d; /* เปลี่ยนสีข้อความเป็นชมพูเข้ม */
 }
 /* ส่วนท้าย */
 .bohbah-section {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #fff7e6, #ffe6f0);
+  background: linear-gradient(135deg, #fff0f6, #ffd6e8); /* เปลี่ยนเป็นโทนชมพูอ่อนละมุน */
   display: flex;
   justify-content: center;
   font-family: 'Mali', sans-serif;
 }
 
 .bohbah-box {
-  background: #fff8f0;
-  border: 4px dashed #ff99cc;
+  background: #fff0f6; /* เปลี่ยนสีพื้นหลัง */
+  border: 4px dashed #d6336c; /* เปลี่ยนขอบจากชมพูสดเป็นชมพูเข้ม */
   border-radius: 24px;
   padding: 35px 25px;
   max-width: 600px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 8px 16px rgba(255, 170, 204, 0.3);
+  box-shadow: 0 8px 16px rgba(214, 51, 108, 0.25); /* เปลี่ยนเงาเป็นชมพูเข้ม */
   animation: shakeUp 0.5s ease-in-out;
 }
 
 .bohbah-box h2 {
   font-size: 1.8rem;
-  color: #ff3399;
+  color: #a72449; /* เปลี่ยนสีหัวข้อเป็นชมพูเข้ม */
   margin-bottom: 12px;
 }
 
 .bohbah-box p {
   font-size: 1.1rem;
-  color: #555;
+  color: #6f2d4a; /* เปลี่ยนสีข้อความเป็นชมพูเข้ม */
   line-height: 1.6;
   margin-bottom: 25px;
 }
@@ -156,7 +164,7 @@ iframe {
 .bohbah-footer {
   margin-top: 25px;
   font-weight: bold;
-  color: #cc3399;
+  color: #a72449; /* เปลี่ยนสี footer เป็นชมพูเข้ม */
   font-size: 1rem;
   animation: popIn 1s ease;
 }
@@ -185,14 +193,14 @@ iframe {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #f560e1;
+  background-color: #d6336c; /* เปลี่ยนสีปุ่ม scroll top จาก #f560e1 เป็นชมพูเข้ม */
   color: #fff;
   border: none;
   border-radius: 999px;
   padding: 12px 20px;
   font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(214, 51, 108, 0.4); /* เปลี่ยนเงาปุ่มเป็นชมพูเข้ม */
   transition: transform 0.2s ease;
   z-index: 1000;
   font-family: 'Mali', sans-serif;
@@ -200,6 +208,68 @@ iframe {
 
 .scroll-top-btn:hover {
   transform: scale(1.1);
-  background-color: #fd00db;
+  background-color: #a72449; /* เปลี่ยนสี hover ปุ่มให้เข้มขึ้น */
+}
+.message-to-you-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, #ffd6e8 0%, #ffb3c6 100%); /* เปลี่ยนพื้นหลังเป็นชมพูพาสเทล */
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(255, 179, 198, 0.5); /* เงาเป็นชมพูอ่อน */
+  font-family: 'Mali', cursive;
+  color: #6f2d4a; /* เปลี่ยนสีข้อความเป็นชมพูเข้ม */
+  text-align: center;
 }
 
+.message-to-you-section h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(111, 45, 74, 0.4); /* เปลี่ยนเงาข้อความหัวข้อ */
+}
+
+#messageInput {
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  resize: vertical;
+  box-shadow: 0 4px 8px rgba(255, 179, 198, 0.3); /* เปลี่ยนเงา input เป็นชมพูอ่อน */
+  transition: box-shadow 0.3s ease;
+}
+
+#messageInput:focus {
+  outline: none;
+  box-shadow: 0 0 12px 4px #d6336c; /* โฟกัสกล่องชมพูเข้ม */
+}
+
+.btn-send-message {
+  margin-top: 20px;
+  background: #d6336c; /* ปุ่มส่งข้อความสีชมพูเข้ม */
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(214, 51, 108, 0.6);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-send-message:hover {
+  background: #a72449; /* สีเข้มขึ้นเวลาชี้ */
+  box-shadow: 0 8px 20px rgba(167, 36, 73, 0.8);
+}
+
+#thanksMsg {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2d6a4f; /* เปลี่ยนสีข้อความขอบคุณเป็นเขียวเข้ม */
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+#thanksMsg.show {
+  opacity: 1;
+}

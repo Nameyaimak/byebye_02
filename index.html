@@ -17,8 +17,30 @@
   <header>
     test
   </header>
-  <input type="text" id="searchInput" placeholder="🔍 เผื่อหาไม่เจอ" onkeyup="filterFriends()"
-    style="margin: 20px auto; display: block; padding: 10px 15px; font-size: 1rem; border-radius: 12px; border: 1px solid #ccc; width: 80%; max-width: 400px;">
+ <!-- ส่วนครู -->
+  <section class="teacher-section">
+  <h2>ถึงแม่ๆทั้งสองง</h2>
+  <div class="teacher-grid">
+    <button class="friend-btn teacher-btn" onclick="showModal('ครูนิ่ม', `
+      <p>💙</p>
+      <iframe src='https://open.spotify.com/embed/track/4SZko61aMnmgvNhfhgTuD3?utm_source=generator' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' allowfullscreen loading='lazy'></iframe>
+    `)">
+      <img src="https://i.pravatar.cc/150?img=1" alt="ครูนิ่ม">
+      <span>ครูนิ่ม</span>
+    </button>
+
+    <button class="friend-btn teacher-btn" onclick="showModal('ครูหมิว', `
+      <p>❤️</p>
+      <iframe src='https://open.spotify.com/embed/track/3U4isOIWM3VvDubwSI3y7a?utm_source=generator' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' allowfullscreen loading='lazy'></iframe>
+    `)">
+      <img src="https://i.pravatar.cc/150?img=1" alt="ครูหมิว">
+      <span>ครูหมิว</span>
+    </button>
+  </div>
+</section>
+<!-- จบส่วนครู -->
+   <input type="text" id="searchInput" placeholder="🔍 เผื่อหาไม่เจอ" onkeyup="filterFriends()"
+    style="margin: 20px auto; display: block; padding: 10px 15px; font-size: 1rem; border-radius: 12px; border: 1px solid #ccc; width: 80%; max-width: 400px; ">
   <div class="grid">
     <button class="friend-btn" onclick="showModal('test 1', `
       <p>test</p>

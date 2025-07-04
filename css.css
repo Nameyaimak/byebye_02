@@ -190,23 +190,54 @@ iframe {
 }
 /* ปุ่ม */
 .scroll-top-btn {
+  display: none; /* เริ่มซ่อน */
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #d6336c; /* เปลี่ยนสีปุ่ม scroll top จาก #f560e1 เป็นชมพูเข้ม */
+  background-color: #d6336c; /* ชมพูเข้ม */
   color: #fff;
   border: none;
   border-radius: 999px;
   padding: 12px 20px;
   font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(214, 51, 108, 0.4); /* เปลี่ยนเงาปุ่มเป็นชมพูเข้ม */
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(214, 51, 108, 0.4);
+  transition: transform 0.2s ease, background-color 0.3s ease;
   z-index: 1000;
   font-family: 'Mali', sans-serif;
 }
 
+.scroll-top-btn.show {
+  display: block; /* โผล่ตอน scroll */
+}
+
 .scroll-top-btn:hover {
   transform: scale(1.1);
-  background-color: #a72449; /* เปลี่ยนสี hover ปุ่มให้เข้มขึ้น */
+  background-color: #a72449; /* สีเข้มเวลาชี้ */
+}
+
+.teacher-section {
+  padding: 2rem 1.5rem 1rem;
+  background: #ffe4ec; /* ชมพูอ่อนให้ต่างจากโซนเพื่อน */
+  text-align: center;
+}
+
+.teacher-section h2 {
+  color: #a72449;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Mali', sans-serif;
+}
+
+.teacher-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.teacher-btn {
+  border: 3px dashed #d6336c; /* ขอบแบบ dashed ให้รู้ว่าไม่ธรรมดา */
+  background: #fff0f6;
+  box-shadow: 0 6px 14px rgba(214, 51, 108, 0.35);
 }

@@ -27,9 +27,26 @@ function filterFriends() {
   friendButtons.forEach((btn) => {
     const name = btn.innerText.toLowerCase();
     if (name.includes(input)) {
-      btn.style.display = "flex";
+      btn.style.display = "flex"; 
     } else {
       btn.style.display = "none";
     }
   });
 }
+// scroll top แบบ smooth
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+// แสดง/ซ่อนปุ่ม scroll top ตามตำแหน่ง scroll
+window.addEventListener("scroll", () => {
+  const scrollBtn = document.querySelector(".scroll-top-btn");
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
